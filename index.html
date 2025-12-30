@@ -1,82 +1,72 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Адвокат Віктор Петришин | Головна</title>
-<meta name="description" content="Адвокат Віктор Петришин. Юридичні послуги, новини, аналітика та судова практика. Захист прав клієнтів у цивільних, сімейних та господарських справах.">
-<meta name="author" content="Петришин Віктор Михайлович">
-<meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адвокат Віктор Петришин | Головна</title>
+    <meta name="description" content="Адвокат Віктор Петришин. Юридичні послуги, новини, аналітика та судова практика. Захист прав клієнтів у цивільних, сімейних та господарських справах.">
+    <meta name="keywords" content="адвокат Львів, Петришин Віктор, цивільне право, сімейне право, господарське право, адміністративне право">
+    <meta name="author" content="Петришин Віктор Михайлович">
+    <meta name="robots" content="index, follow">
 
-<!-- Bootstrap 5 -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Адвокат Віктор Петришин | Львів">
+    <meta property="og:description" content="Професійна правнича допомога у Львові">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Адвокат+Петришин">
+    <meta property="og:url" content="https://ваш-сайт.github.io/">
+    <meta property="og:type" content="website">
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-<style>
-:root {
-    --primary: #ff5722;
-    --accent: #ffc107;
-    --bg-light: #fff3e0;
-    --text-dark: #212121;
-    --hero-overlay: rgba(0,0,0,0.4);
-}
-body { font-family: 'Roboto', sans-serif; color: var(--text-dark); }
-h1,h2,h3,h4,h5 { font-family: 'Playfair Display', serif; }
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-/* Навігація */
-.navbar { background-color: var(--primary) !important; }
-.navbar-brand, .nav-link { color: white !important; font-weight: 500; }
-.nav-link:hover { color: var(--accent) !important; }
-.nav-link.active { color: var(--accent) !important; font-weight: 600; }
+    <style>
+        :root {
+            --primary: #ff5722;
+            --accent: #ffc107;
+            --bg-light: #fff3e0;
+            --text-dark: #212121;
+            --hero-overlay: rgba(0,0,0,0.4);
+        }
 
-/* Герой */
-.hero {
-    background: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
-        url('https://via.placeholder.com/1920x800?text=Юридична+практика') center/cover no-repeat;
-    color: white;
-    padding: 150px 0 100px;
-    text-align: center;
-}
-.hero .btn-light {
-    background: white;
-    color: var(--primary);
-    border-color: var(--primary);
-    font-weight: 500;
-}
-.hero .btn-light:hover {
-    background: var(--accent);
-    color: black;
-    border-color: var(--accent);
-}
+        body { font-family: 'Roboto', sans-serif; color: var(--text-dark); }
+        h1,h2,h3,h4,h5 { font-family: 'Playfair Display', serif; }
 
-/* Секції */
-.section { padding: 80px 0; }
-.bg-light-gray { background-color: var(--bg-light); }
+        .navbar { background-color: var(--primary) !important; }
+        .navbar-brand, .nav-link { color: white !important; font-weight: 500; }
+        .nav-link:hover, .nav-link.active { color: var(--accent) !important; font-weight: 600; }
 
-/* Картки */
-.card, .news-card { transition: transform 0.3s, box-shadow 0.3s; }
-.card:hover, .news-card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+        .hero {
+            background: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+                url('https://via.placeholder.com/1920x800?text=Юридична+практика') center/cover no-repeat;
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+        }
+        .hero .btn-light { background: white; color: var(--primary); border-color: var(--primary); font-weight: 500; }
+        .hero .btn-light:hover { background: var(--accent); color: black; border-color: var(--accent); }
 
-/* Новини */
-.news-card { background: white; border-radius: 10px; overflow: hidden; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-.news-card img { height: 220px; object-fit: cover; width: 100%; }
-.news-card .btn-accent { background-color: var(--accent); border: none; font-weight: 500; color: black; }
-.news-card .btn-accent:hover { background-color: #e6ac00; }
+        .section { padding: 80px 0; }
+        .bg-light-gray { background-color: var(--bg-light); }
 
-/* Кнопки */
-.btn-primary { background-color: var(--primary); border-color: var(--primary); }
-.btn-primary:hover { background-color: #e64a19; border-color: #e64a19; }
+        .card, .news-card { transition: transform 0.3s, box-shadow 0.3s; }
+        .card:hover, .news-card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
 
-/* Футер */
-footer { background-color: var(--text-dark); color: white; padding: 30px 0; }
+        .news-card { background: white; border-radius: 10px; overflow: hidden; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .news-card img { height: 220px; object-fit: cover; width: 100%; }
+        .news-card .btn-accent { background-color: var(--accent); border: none; font-weight: 500; color: black; }
+        .news-card .btn-accent:hover { background-color: #e6ac00; }
 
-/* Адаптивність hero на мобільних */
-@media (max-width: 768px) {
-    .hero { padding: 120px 15px 80px; }
-}
-</style>
+        .btn-primary { background-color: var(--primary); border-color: var(--primary); }
+        .btn-primary:hover { background-color: #e64a19; border-color: #e64a19; }
+
+        footer { background-color: var(--text-dark); color: white; padding: 40px 0; }
+        .disclaimer { font-size: 0.85rem; color: #ccc; margin-top: 20px; }
+
+        @media (max-width: 768px) { .hero { padding: 120px 15px 80px; } }
+    </style>
 </head>
 <body>
 
@@ -92,7 +82,7 @@ footer { background-color: var(--text-dark); color: white; padding: 30px 0; }
                 <li class="nav-item"><a class="nav-link active" href="#home">Головна</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">Про мене</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Послуги</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новини</a></li>
+                <li class="nav-item"><a class="nav-link" href="#news">Новини</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
             </ul>
         </div>
@@ -132,7 +122,7 @@ footer { background-color: var(--text-dark); color: white; padding: 30px 0; }
         <h2 class="text-center mb-5">Мої послуги</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="card h-100 text-center shadow">
+                <div class="card h-100 text-center shadow p-3">
                     <div class="card-body">
                         <h5>Цивільне та сімейне право</h5>
                         <p>Розлучення, аліменти, позбавлення та поновлення батьківських прав, поділ майна, відшкодування шкоди, спадщина, житлові та земельні спори</p>
@@ -140,7 +130,7 @@ footer { background-color: var(--text-dark); color: white; padding: 30px 0; }
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card h-100 text-center shadow">
+                <div class="card h-100 text-center shadow p-3">
                     <div class="card-body">
                         <h5>Адміністративне право</h5>
                         <p>Оскарження рішень, дій чи бездіяльності суб'єктів владних повноважень, податкові спори, спори з митними органами, оскарження постанов про адміністративні правопорушення</p>
@@ -148,7 +138,7 @@ footer { background-color: var(--text-dark); color: white; padding: 30px 0; }
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card h-100 text-center shadow">
+                <div class="card h-100 text-center shadow p-3">
                     <div class="card-body">
                         <h5>Господарське право</h5>
                         <p>Договірні спори, корпоративні спори, стягнення дебіторської заборгованості, інші спори, захист бізнесу</p>
@@ -166,12 +156,12 @@ footer { background-color: var(--text-dark); color: white; padding: 30px 0; }
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="news-card">
-                    <img src="https://via.placeholder.com/600x400?text=Новина+1" alt="Крадіжка">
+                    <img src="https://via.placeholder.com/600x400?text=Новина+1" alt="Крадіжка 2026">
                     <div class="p-4">
                         <h5>З якої суми крадіжки у 2026 році настає кримінальна відповідальність?</h5>
                         <p class="text-muted">30 грудня 2025</p>
                         <p>Якщо вартість викраденого перевищує <strong>3328 грн</strong>, настає кримінальна відповідальність за ст. 185 КК України.</p>
-                        <a href="news/kradizhka-2026.html" class="btn btn-accent">Читати повністю →</a>
+                        <a href="#" class="btn btn-accent">Читати повністю →</a>
                     </div>
                 </div>
             </div>
@@ -179,10 +169,10 @@ footer { background-color: var(--text-dark); color: white; padding: 30px 0; }
                 <div class="news-card">
                     <img src="https://via.placeholder.com/600x400?text=Верховний+Суд" alt="ДТП з іноземною реєстрацією">
                     <div class="p-4">
-                        <h5>Відшкодування шкоди від ДТП з авто на іноземній реєстрації</h5>
+                        <h5>Актуальні позиції Верховного Суду щодо ДТП з іноземною реєстрацією</h5>
                         <p class="text-muted">12 листопада 2025</p>
-                        <p>Належним відповідачем є МТСБУ — постанова КЦС ВС у справі № 285/3662/23.</p>
-                        <a href="news/dtp-inozemna-reiestratsiia.html" class="btn btn-accent">Читати далі →</a>
+                        <p>Належним відповідачем у справах є МТСБУ — постанова КЦС ВС у справі № 285/3662/23.</p>
+                        <a href="#" class="btn btn-accent">Читати далі →</a>
                     </div>
                 </div>
             </div>
@@ -193,13 +183,10 @@ footer { background-color: var(--text-dark); color: white; padding: 30px 0; }
                         <h5>Встановлення земельного сервітуту</h5>
                         <p class="text-muted">19 листопада 2025</p>
                         <p>Сервітут можливий лише за умови вимушеної та неминучої потреби — постанова КГС ВС у справі № 902/1257/24.</p>
-                        <a href="news/zemelnyi-servitut.html" class="btn btn-accent">Читати далі →</a>
+                        <a href="#" class="btn btn-accent">Читати далі →</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="text-center mt-4">
-            <a href="news.html" class="btn btn-primary">Переглянути всі новини</a>
         </div>
     </div>
 </section>
@@ -210,18 +197,18 @@ footer { background-color: var(--text-dark); color: white; padding: 30px 0; }
         <h2 class="text-center mb-5">Контакти</h2>
         <div class="row align-items-start">
             <div class="col-md-6 mb-4">
-                <form>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                     <div class="mb-3">
                         <label class="form-label">Ім'я</label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" name="name" class="form-control" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Телефон або email</label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" name="contact" class="form-control" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Повідомлення</label>
-                        <textarea class="form-control" rows="5" required></textarea>
+                        <textarea name="message" class="form-control" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Відправити повідомлення</button>
                 </form>
@@ -242,6 +229,9 @@ footer { background-color: var(--text-dark); color: white; padding: 30px 0; }
                 </div>
             </div>
         </div>
+        <div class="text-center mt-5">
+            <p class="disclaimer">Інформація на сайті має виключно інформаційний характер і не є юридичною консультацією чи публічною офертою.</p>
+        </div>
     </div>
 </section>
 
@@ -251,187 +241,6 @@ footer { background-color: var(--text-dark); color: white; padding: 30px 0; }
     </div>
 </footer>
 
-<!-- Schema.org -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LegalService",
-  "name": "Адвокат Петришин Віктор",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Львів",
-    "addressCountry": "UA"
-  },
-  "telephone": "+380675962719",
-  "email": "viktor.petryshyn0@gmail.com"
-}
-</script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новини та аналітика | Адвокат Петришин</title>
-    <meta name="description" content="Новини, аналітика та судова практика від адвоката Петришина Віктора Михайловича. Актуальні правові позиції та роз’яснення.">
-    <meta name="author" content="Петришин Віктор Михайлович">
-    <meta name="robots" content="index, follow">
-
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --primary: #ff5722;
-            --accent: #ffc107;
-        }
-        body { font-family: 'Roboto', sans-serif; color: #212121; }
-        h1,h2,h3,h4,h5 { font-family: 'Playfair Display', serif; }
-
-        .navbar { background-color: var(--primary) !important; }
-        .navbar-brand, .nav-link { color: white !important; font-weight: 500; }
-        .nav-link:hover { color: var(--accent) !important; }
-        .nav-link.active { color: var(--accent) !important; font-weight: 600; }
-
-        .news-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: 0.3s;
-            height: 100%;
-        }
-        .news-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-        }
-        .news-card img {
-            height: 220px;
-            width: 100%;
-            object-fit: cover;
-        }
-        .btn-accent {
-            background-color: var(--accent);
-            border: none;
-            font-weight: 500;
-            color: #000;
-        }
-        .btn-accent:hover { background-color: #e6ac00; }
-
-        footer {
-            background-color: #212121;
-            color: white;
-            padding: 30px 0;
-            margin-top: 60px;
-        }
-    </style>
-</head>
-<body>
-
-<!-- Навігація -->
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Адвокат Віктор Петришин</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html#home">Головна</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#about">Про мене</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#services">Послуги</a></li>
-                <li class="nav-item"><a class="nav-link active" href="news.html">Новини</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#contact">Контакти</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<div class="container py-5 mt-5">
-
-    <!-- Breadcrumbs -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb justify-content-center">
-            <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Новини</li>
-        </ol>
-    </nav>
-
-    <h1 class="mb-5 text-center">Новини, аналітика та судова практика</h1>
-
-    <div class="row g-4">
-
-        <!-- Новина 1 -->
-        <div class="col-md-6">
-            <article class="news-card">
-                <img src="https://via.placeholder.com/600x400?text=Крадіжка" alt="Кримінальна відповідальність за крадіжку">
-                <div class="p-4">
-                    <h5>З якої суми крадіжки у 2026 році настає кримінальна відповідальність?</h5>
-                    <p class="text-muted">30 грудня 2025</p>
-                    <p>Якщо вартість викраденого перевищує <strong>3328 грн</strong>, настає кримінальна відповідальність за ст. 185 КК України.</p>
-                    <a href="news/kradizhka-2026.html" class="btn btn-accent">Читати повністю →</a>
-                </div>
-            </article>
-        </div>
-
-        <!-- Новина 2 -->
-        <div class="col-md-6">
-            <article class="news-card">
-                <img src="https://via.placeholder.com/600x400?text=Верховний+Суд" alt="ДТП з іноземною реєстрацією">
-                <div class="p-4">
-                    <h5>ДТП з автомобілем на іноземній реєстрації: позиція Верховного Суду</h5>
-                    <p class="text-muted">12 листопада 2025</p>
-                    <p>Належним відповідачем у справах про відшкодування шкоди є МТСБУ — постанова КЦС ВС у справі № 285/3662/23.</p>
-                    <a href="news/dtp-inozemna-reiestratsiia.html" class="btn btn-accent">Читати далі →</a>
-                </div>
-            </article>
-        </div>
-
-        <!-- Новина 3 -->
-        <div class="col-md-6">
-            <article class="news-card">
-                <img src="https://via.placeholder.com/600x400?text=Сервітут" alt="Земельний сервітут">
-                <div class="p-4">
-                    <h5>Встановлення земельного сервітуту: правова позиція Верховного Суду</h5>
-                    <p class="text-muted">19 листопада 2025</p>
-                    <p>Сервітут допускається лише за умови вимушеної та неминучої потреби користування чужою ділянкою.</p>
-                    <a href="news/zemelnyi-servitut.html" class="btn btn-accent">Читати далі →</a>
-                </div>
-            </article>
-        </div>
-
-    </div>
-</div>
-
-<footer class="text-center">
-    <div class="container">
-        <p>&copy; 2025 Адвокат Петришин Віктор Михайлович. Всі права захищено.</p>
-    </div>
-</footer>
-
-<!-- Schema.org -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LegalService",
-  "name": "Адвокат Петришин Віктор",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Львів",
-    "addressCountry": "UA"
-  },
-  "telephone": "+380675962719",
-  "email": "viktor.petryshyn0@gmail.com"
-}
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-
+    </html>
