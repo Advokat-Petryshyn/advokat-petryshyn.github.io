@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Адвокат Віктор Петришин</title>
+
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
     <style>
         :root {
-            --primary: #0d47a1;     /* Темно-синій */
-            --accent: #d4af37;      /* Золотистий */
+            --primary: #0d47a1;
+            --accent: #d4af37;
             --bg-light: #f8f9fa;
             --text-dark: #343a40;
             --hero-overlay: rgba(0,0,0,0.6);
@@ -20,8 +23,8 @@
         body {
             font-family: 'Roboto', sans-serif;
             color: var(--text-dark);
-            background: white;
         }
+
         h1, h2, h3, h4, h5 {
             font-family: 'Playfair Display', serif;
         }
@@ -30,235 +33,224 @@
         .navbar {
             background-color: var(--primary) !important;
         }
+
         .navbar-brand, .nav-link {
             color: white !important;
             font-weight: 500;
         }
+
         .nav-link:hover {
             color: var(--accent) !important;
         }
 
         /* Герой */
         .hero {
-            background: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('https://via.placeholder.com/1920x800?text=Фон+для+герою') center/cover no-repeat;
+            background: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+                        url('https://via.placeholder.com/1920x800?text=Юридична+практика') center/cover no-repeat;
             color: white;
             padding: 150px 0;
         }
+
         .hero .btn-light {
-            background: white;
-            color: var(--primary);
-            border-color: var(--primary);
             font-weight: 500;
-        }
-        .hero .btn-light:hover {
-            background: var(--accent);
-            color: black;
-            border-color: var(--accent);
         }
 
         /* Секції */
-        .section { padding: 80px 0; }
-        .bg-light-gray { background-color: var(--bg-light); }
+        .section {
+            padding: 80px 0;
+        }
+
+        .bg-light-gray {
+            background-color: var(--bg-light);
+        }
 
         /* Карточки */
         .card {
             transition: transform 0.3s, box-shadow 0.3s;
-            border: 2px solid transparent;
         }
+
         .card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-8px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-            border-color: var(--accent);
         }
 
         /* Поради */
         .advice-card {
-            height: 100%;
             background: white;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            height: 100%;
             transition: transform 0.3s;
         }
-        .advice-card:hover { transform: translateY(-8px); }
-        .advice-card img { height: 220px; object-fit: cover; }
+
+        .advice-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .advice-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
         .advice-card .btn {
             background-color: var(--accent);
-            color: black;
             border: none;
             font-weight: 500;
+            color: black;
         }
-        .advice-card .btn:hover { background-color: #b8972c; }
+
+        .advice-card .btn:hover {
+            background-color: #b8972c;
+        }
 
         /* Футер */
         footer {
             background-color: var(--text-dark);
             color: white;
-            padding: 30px 0;
         }
     </style>
 </head>
+
 <body>
 
-    <!-- Навігація -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Адвокат Віктор Петришин </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Головна</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Про мене</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Послуги</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#advice">Практичні поради</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Герой -->
-    <section id="home" class="hero text-center">
-        <div class="container">
-            <h1 class="display-4">Адвокат Віктор Петришин</h1>
-            <p class="lead">Професійна правнича допомога </p>
-            <a href="#contact" class="btn btn-light btn-lg mt-4">Записатися на консультацію</a>
-        </div>
-    </section>
-
-    <!-- Про мене -->
-    <section id="about" class="section bg-light-gray">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/400x500?text=Ваше+фото" alt="Адвокат Віктор Петришин" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-md-8">
-                    <h2>Про мене</h2>
-                    <p>Я — адвокат з досвідом роботи понад 14 років. Спеціалізуюся на захисті прав та інтересів клієнтів у цивільних, сімейних, господарських, адміністративних справах, у справах про адміністративні правопорушення та ін.</p>
-                    <p>У своїй роботі дотримуюся принципів законності, конфіденційності та індивідуального підходу до кожної справи. Моя мета — не просто правнича допомога, а реальний результат для клієнта.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Послуги -->
-    <section id="services" class="section">
-        <div class="container">
-            <h2 class="text-center mb-5">Мої послуги</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow">
-                        <div class="card-body text-center">
-                            <h5>Цивільне та сімейне право</h5>
-                            <p>Розлучення, аліменти, поділ майна, спадщина, стягнення боргів</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow">
-                        <div class="card-body text-center">
-                            <h5>Адміністративне право</h5>
-                            <p>Оскарження штрафів, захист у справах про адмінправопорушення</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow">
-                        <div class="card-body text-center">
-                            <h5>Господарське право</h5>
-                            <p>Договори, корпоративні спори, захист бізнесу</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- -->
-    <section id="advice" class="section bg-light-gray">
-        <div class="container">
-            <h2 class="text-center mb-5">Практичні поради та судова практика</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="advice-card">
-                        <img src="https://via.placeholder.com/600x400?text=Порада+1" alt="Порада" class="w-100">
-                        <div class="p-4">
-                            <div class="col-md-6 mb-4">
-    <div class="advice-card">
-        <img>
-        <div class="p-4">
-            <h5>Від якої суми крадіжки у 2026 році настає кримінальна відповідальність?</h5>
-            <p class="text-muted">30 грудня 2025</p>
-            <p>Якщо вартість викраденого майна перевищує <strong>3328 грн</strong>, настає кримінальна відповідальність за ст. 185 КК України.</p>
-            <p>Детальніше про розрахунок та практику оскарження — за посиланням:</p>
-            <a href="https://jurliga.ligazakon.net/news/240843_vd-yako-sumi-kradzhki-u-2026-rots-nasta-krimnalna-vdpovdalnst" target="_blank" class="btn">Читати повністю на ЮРЛІГА →</a>
+<!-- Навігація -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">Адвокат Віктор Петришин</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Головна</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Про мене</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Послуги</a></li>
+                <li class="nav-item"><a class="nav-link" href="#advice">Поради</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
+            </ul>
         </div>
     </div>
-</div>
+</nav>
+
+<!-- Герой -->
+<section id="home" class="hero text-center">
+    <div class="container">
+        <h1 class="display-4">Адвокат Віктор Петришин</h1>
+        <p class="lead">Професійна правнича допомога</p>
+        <a href="#contact" class="btn btn-light btn-lg mt-4">Записатися на консультацію</a>
+    </div>
+</section>
+
+<!-- Про мене -->
+<section id="about" class="section bg-light-gray">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <img src="https://via.placeholder.com/400x500?text=Фото+адвоката"
+                     alt="Адвокат Віктор Петришин"
+                     class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-8">
+                <h2>Про мене</h2>
+                <p>
+                    Я — адвокат з досвідом роботи понад 14 років. Спеціалізуюся на захисті прав
+                    та інтересів клієнтів у цивільних, сімейних, господарських і адміністративних справах.
+                </p>
+                <p>
+                    Дотримуюся принципів законності, конфіденційності та індивідуального підходу.
+                    Моя мета — реальний результат для клієнта.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Послуги -->
+<section id="services" class="section">
+    <div class="container">
+        <h2 class="text-center mb-5">Мої послуги</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center shadow">
+                    <div class="card-body">
+                        <h5>Цивільне та сімейне право</h5>
+                        <p>Розлучення, аліменти, поділ майна, спадщина</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center shadow">
+                    <div class="card-body">
+                        <h5>Адміністративне право</h5>
+                        <p>Штрафи, ДТП, адмінправопорушення</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center shadow">
+                    <div class="card-body">
+                        <h5>Господарське право</h5>
+                        <p>Договори, корпоративні спори, бізнес</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Практичні поради -->
+<section id="advice" class="section bg-light-gray">
+    <div class="container">
+        <h2 class="text-center mb-5">Практичні поради та судова практика</h2>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="advice-card">
+                    <img src="https://via.placeholder.com/600x400?text=Кримінальна+відповідальність" alt="Крадіжка">
+                    <div class="p-4">
+                        <h5>З якої суми крадіжки у 2026 році настає кримінальна відповідальність?</h5>
                         <p class="text-muted">30 грудня 2025</p>
-                            <p> </p>
-                            <a href="#" class="btn">Читати далі →</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Додай свої поради тут -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Контакти -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="text-center mb-5">Контакти</h2>
-            <div class="row align-items-start">
-                <div class="col-md-6 mb-4">
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label">Ім'я</label>
-                            <input type="text" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Телефон або email</label>
-                            <input type="text" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Повідомлення</label>
-                            <textarea class="form-control" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Відправити повідомлення</button>
-                    </form>
-                    <small class="text-muted mt-3 d-block"> </small>
-                </div>
-                <div class="col-md-6">
-                    <div class="ps-md-4">
-                        <p class="mb-3"><strong>Телефон:</strong><br>
-                            <a href="tel:+380675962719" class="text-decoration-none" style="color: var(--primary); font-size: 1.3rem; font-weight: 600;">
-                                +380 (67) 596-27-19
-                            </a>
+                        <p>
+                            Якщо вартість викраденого перевищує <strong>3328 грн</strong>,
+                            настає кримінальна відповідальність за ст. 185 КК України.
                         </p>
-                        <p class="mb-3"><strong>Email:</strong><br>
-                            <a href="mailto:viktor.petryshyn0@gmail.com" class="text-decoration-none" style="color: var(--primary);">
-                                viktor.petryshyn0@gmail.com
-                            </a>
-                        </p>
-                        <p class="mb-3"><strong>Адвокат:</strong> Петришин Віктор Михайлович</p>
-                        <p><strong>Адреса:</strong> м. Львів </p>
+                        <a href="https://jurliga.ligazakon.net/news/240843_vd-yako-sumi-kradzhki-u-2026-rots-nasta-krimnalna-vdpovdalnst"
+                           target="_blank" class="btn">
+                            Читати повністю →
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Футер -->
-    <footer class="py-5 text-center">
-        <div class="container">
-            <p>&copy; 2025 Адвокат Віктор Петришин. Всі права захищено.</p>
+<!-- Контакти -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="text-center mb-5">Контакти</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <p><strong>Телефон:</strong><br>
+                    <a href="tel:+380675962719">+380 (67) 596-27-19</a>
+                </p>
+                <p><strong>Email:</strong><br>
+                    <a href="mailto:viktor.petryshyn0@gmail.com">viktor.petryshyn0@gmail.com</a>
+                </p>
+                <p><strong>Адреса:</strong> м. Львів</p>
+            </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="py-4 text-center">
+    <div class="container">
+        <p class="mb-0">&copy; 2025 Адвокат Віктор Петришин. Всі права захищено.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
